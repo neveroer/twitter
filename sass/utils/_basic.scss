@@ -1,0 +1,28 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #212121;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+// базовая отзывчивость для изображений
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

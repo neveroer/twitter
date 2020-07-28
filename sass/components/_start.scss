@@ -1,0 +1,41 @@
+.start {
+  padding-top: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 60px;
+}
+
+.title {
+  padding-bottom: 25px;
+  color: rgb(29, 161, 242);
+  font-size: 30px;
+  line-height: 1.8;
+  &-like {
+    color: #ffffff;
+  }
+}
+
+.description {
+  color: #cccccc;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.instruction {
+  padding-top: 45px;
+  padding-bottom: 55px;
+  color: #bebebe;
+}
+
+.button {
+  fill: #ffffff;
+  @extend %button;
+  &:hover,
+  &:focus {
+    fill: rgb(29, 161, 242);
+  }
+}
+
+.twitter-icon {
+  margin-left: 10px;
+}
