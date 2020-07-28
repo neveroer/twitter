@@ -15,6 +15,13 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 1000px) {
+  body {
+    background-color: #000000;
+    height: 100vh;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -68,6 +75,25 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .start {
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .start {
+    max-width: 1000px;
+    height: 100%;
+    background-color: #212121;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .title {
   padding-bottom: 25px;
   color: #1da1f2;
@@ -85,10 +111,24 @@ img {
   line-height: 1.5;
 }
 
+@media screen and (min-width: 1000px) {
+  .description {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
 .instruction {
   padding-top: 45px;
   padding-bottom: 55px;
   color: #bebebe;
+}
+
+@media screen and (min-width: 768px) {
+  .instruction {
+    padding-top: 70px;
+    padding-bottom: 90px;
+  }
 }
 
 .button {
