@@ -13,6 +13,10 @@ html {
 body {
   background-color: #212121;
   text-align: center;
+  font-family: "PT Serif", serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #bebebe;
 }
 
 @media screen and (min-width: 1000px) {
@@ -34,5 +38,137 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  padding-top: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    max-width: 1000px;
+    height: 100%;
+    background-color: #212121;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.button {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: #1da1f2;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-width: 150px;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover, .button:focus {
+  color: #1da1f2;
+  background-color: #ffffff;
+  border-color: #1da1f2;
+}
+
+.title {
+  padding-bottom: 25px;
+  color: #1da1f2;
+  font-size: 30px;
+  line-height: 1.8;
+  font-weight: bold;
+}
+
+.title-like {
+  color: #ffffff;
+}
+
+.main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.username {
+  margin-left: auto;
+  color: #ffffff;
+}
+
+.balance {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .balance {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+}
+
+.likes {
+  margin-left: auto;
+}
+
+.buttons {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.button {
+  margin-bottom: 70px;
+}
+
+.button:not(:last-child) {
+  margin-right: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .button:not(:last-child) {
+    margin-right: 70px;
+  }
+}
+
+.help {
+  text-decoration: none;
+  color: #cccccc;
+}
+
+.help:visited {
+  color: #cccccc;
 }
 /*# sourceMappingURL=main.css.map */

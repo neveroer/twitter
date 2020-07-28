@@ -13,6 +13,10 @@ html {
 body {
   background-color: #212121;
   text-align: center;
+  font-family: "PT Serif", serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #bebebe;
 }
 
 @media screen and (min-width: 1000px) {
@@ -34,6 +38,32 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  padding-top: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    max-width: 1000px;
+    height: 100%;
+    background-color: #212121;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .button {
@@ -66,43 +96,6 @@ img {
   color: #1da1f2;
   background-color: #ffffff;
   border-color: #1da1f2;
-}
-
-.start {
-  padding-top: 40px;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-bottom: 60px;
-}
-
-@media screen and (min-width: 768px) {
-  .start {
-    padding-top: 70px;
-    padding-bottom: 80px;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .start {
-    max-width: 1000px;
-    height: 100%;
-    background-color: #212121;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-.title {
-  padding-bottom: 25px;
-  color: #1da1f2;
-  font-size: 30px;
-  line-height: 1.8;
-}
-
-.title-like {
-  color: #ffffff;
 }
 
 .description {
@@ -141,5 +134,17 @@ img {
 
 .twitter-icon {
   margin-left: 10px;
+}
+
+.title {
+  padding-bottom: 25px;
+  color: #1da1f2;
+  font-size: 30px;
+  line-height: 1.8;
+  font-weight: bold;
+}
+
+.title-like {
+  color: #ffffff;
 }
 /*# sourceMappingURL=start.css.map */

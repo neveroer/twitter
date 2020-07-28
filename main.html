@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!-- здесь будут шрифты -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
@@ -13,22 +16,25 @@
   </head>
 
   <body>
+    <div class="container">
     <header>
-      <div>
-        <span>twitter like</span>
-        <span>@username</span>
+      <div class="main-header title">
+        <span>twitter </span><span class="title-like">like</span>
+        <p class="username">@username</p>
       </div>
-      <div>
-        <span>balance</span>
-        <span>likes</span>
+      <div class="balance">
+        <p class="money">balance:</p>
+        <p class="likes">likes:</p>
       </div>
     </header>
     <main>
-      <button>Пополнить</button>
-      <a href="">Потратить</a>
+      <div class="buttons">
+      <button class="button">Пополнить</button>
+      <a class="button" href="">Потратить</a>
+      </div>
     </main>
     <footer>
-      <a title="Telegram" href="tg://resolve?domain=isheldon">Поддержка</a>
+      <a class="help" title="Telegram" href="tg://resolve?domain=isheldon">Поддержка</a>
     </footer>
   </body>
 </html>
