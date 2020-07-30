@@ -21,20 +21,49 @@
       <div class="main-header title">
         <span>twitter </span><span class="title-like">like</span>
         <p class="username">@username</p>
+        <a class="log-out" href="./index.html" aria-label="log-out"><svg width="18" height="18">
+            <use href="./images/sprite.svg#icon-modal-close"></use>
+          </svg></a>
       </div>
       <div class="balance">
-        <p class="money">balance:</p>
-        <p class="likes">likes:</p>
+        <p class="money">balance:</p> <span class="money-amount">123 Like</span>
+        <div class="money"><span>123 bip</span><span>|</span><span>123 usdt</span></div>
       </div>
     </header>
     <main>
       <div class="buttons">
-      <button class="button">Пополнить</button>
+      <button data-modal-open class="button">Пополнить</button>
       <a class="button" href="">Потратить</a>
       </div>
+      <div data-modal class="backdrop is-hidden">
+        <div class="modal">
+          <a class="modal-close" data-modal-close href="#" aria-label="Закрыть модальное окно"><svg width="18" height="18">
+              <use href="./images/sprite.svg#icon-modal-close"></use>
+            </svg></a>
+          <form>
+            <label class="modal-input">
+              <input class="input-field" type="number" name="coins" placeholder="123" />
+              <span class="coin-type">Like</span>
+              <svg class="coin-choice" width="18" height="18">
+                <use href="./images/sprite.svg#icon-modal-name"></use>
+              </svg>
+            </label>
+            </form>
+            <a href="">pay via bip-wallet</a>
+             <p>or</p>
+             <p>directly send coins</p>
+             <p>Mx 1d7hcinwcnwmccw</p> <svg class="copy" width="18" height="18">
+              <use href="./images/sprite.svg#icon-modal-name"></use>
+            </svg>
+            <svg class="qr" width="18" height="18">
+              <use href="./images/sprite.svg#icon-modal-name"></use>
+            </svg>
+          </div>
+            </div>
     </main>
     <footer>
       <a class="help" title="Telegram" href="tg://resolve?domain=isheldon">Поддержка</a>
     </footer>
+        <script src="./js/modal.js"></script>
   </body>
 </html>

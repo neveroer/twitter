@@ -177,4 +177,97 @@ img {
 .help:visited {
   color: #cccccc;
 }
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 4;
+  overflow-y: scroll;
+  opacity: 1;
+  -webkit-transition: opacity cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: opacity cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.modal {
+  margin-top: 94px;
+  margin-right: 15px;
+  margin-left: 15px;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  background-color: #212121;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  -webkit-transition: -webkit-transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: -webkit-transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 250ms, -webkit-transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+@media screen and (max-width: 767px) {
+  .modal {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 450px;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden.modal {
+  -webkit-transform: translate(-50%, -50%) scale(0.5);
+          transform: translate(-50%, -50%) scale(0.5);
+}
+
+.modal-name {
+  display: block;
+  margin-bottom: 30px;
+  font-weight: 700;
+  line-height: 1.15;
+  font-size: 20px;
+  color: #212121;
+}
+
+.modal-close {
+  position: absolute;
+  bottom: 100%;
+  left: 100%;
+  -webkit-transform: translate(-130%, 130%);
+          transform: translate(-130%, 130%);
+  background-color: #212121;
+  fill: #212121;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  -webkit-transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.modal-close:hover, .modal-close:focus {
+  background-color: #cccccc;
+  fill: #1da1f2;
+}
 /*# sourceMappingURL=main.css.map */
