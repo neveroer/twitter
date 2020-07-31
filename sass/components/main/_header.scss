@@ -1,0 +1,16 @@
+.main-header {
+  @extend %container;
+  display: flex;
+}
+
+.username {
+  margin-left: auto;
+  color: $title-color;
+}
+
+.logout {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  fill: $title-color;
+}

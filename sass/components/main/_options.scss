@@ -1,0 +1,42 @@
+.options {
+  @extend %container;
+  padding-bottom: 50px;
+}
+
+.checkbox-field {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.option-text {
+  margin-left: 8px;
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.agree {
+  display: inline-block;
+  margin-right: 8px;
+  width: 15px;
+  height: 15px;
+
+  border: 2px solid $primary-text-color;
+  border-radius: 2px;
+
+  .checkbox:checked + & {
+    border-color: transparent;
+    background-color: $accent-color;
+    background-image: url(../images/check.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

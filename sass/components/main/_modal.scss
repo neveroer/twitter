@@ -63,7 +63,7 @@
   font-weight: 700;
   line-height: 1.15;
   font-size: 20px;
-  color: #212121;
+  color: $title-color;
 }
 
 .modal-close {
@@ -83,8 +83,7 @@
   transition: fill $timing $duration;
   &:hover,
   &:focus {
-    // @extend %focus;
-    background-color: #cccccc;
+    background-color: $primary-text-color;
     fill: $accent-color;
   }
 }

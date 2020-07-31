@@ -1,5 +1,5 @@
 .description {
-  color: #cccccc;
+  color: $primary-text-color;
   font-size: 20px;
   line-height: 1.5;
   @media screen and (min-width: 1000px) {
@@ -11,7 +11,7 @@
 .instruction {
   padding-top: 45px;
   padding-bottom: 55px;
-  color: #bebebe;
+  color: $secondary-text-color;
 
   @media screen and (min-width: 768px) {
     padding-top: 70px;
@@ -20,11 +20,11 @@
 }
 
 .button {
-  fill: #ffffff;
+  fill: $title-color;
   @extend %button;
   &:hover,
   &:focus {
-    fill: rgb(29, 161, 242);
+    fill: $accent-color;
   }
 }
 

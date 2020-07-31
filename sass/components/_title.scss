@@ -1,10 +1,13 @@
 .title {
-  padding-bottom: 25px;
-  color: rgb(29, 161, 242);
+  color: $accent-color;
   font-size: 30px;
   line-height: 1.8;
   font-weight: bold;
+
+  @media screen and (max-width: 767px) {
+    font-size: 25px;
+  }
   &-like {
-    color: #ffffff;
+    color: $title-color;
   }
 }

@@ -2,8 +2,8 @@
   text-decoration: none;
   font-size: 18px;
   line-height: 1.5;
-  color: #ffffff;
-  background-color: rgb(29, 161, 242);
+  color: $title-color;
+  background-color: $accent-color;
 
   display: inline-flex;
   align-items: center;
@@ -21,8 +21,40 @@
 
   &:hover,
   &:focus {
-    color: rgb(29, 161, 242);
-    background-color: #ffffff;
-    border-color: rgb(29, 161, 242);
+    color: $accent-color;
+    background-color: $title-color;
+    border-color: $accent-color;
+  }
+}
+// прячет элементы, которые имеют имеют значение для семантики, но отсутствуют на макете
+%visually-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+//  убирает черную рамку при фокусе
+%focus {
+  outline: none;
+}
+
+%container {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    padding-right: 45px;
+    padding-left: 45px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-right: 95px;
+    padding-left: 95px;
   }
 }
