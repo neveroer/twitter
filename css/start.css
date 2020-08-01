@@ -75,7 +75,7 @@ p {
   border-color: #1da1f2;
 }
 
-.container {
+.start {
   padding-right: 15px;
   padding-left: 15px;
   padding-top: 20px;
@@ -83,7 +83,7 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .start {
     padding-right: 45px;
     padding-left: 45px;
     padding-top: 25px;
@@ -92,9 +92,16 @@ p {
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
+  .start {
     padding-right: 95px;
     padding-left: 95px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .start {
+    padding-top: 100px;
+    padding-bottom: 150px;
   }
 }
 
