@@ -80,20 +80,22 @@
               ><svg width="18" height="18">
                 <use href="./images/sprite.svg#icon-modal-close"></use></svg
             ></a>
-            <label class="modal-input">
-              <input
-                class="input-field"
-                type="number"
-                name="coins"
-                placeholder="123"
-              />
-            </label>
-            <select>
-              <option>like</option>
-              <option>bip</option>
-              <option>usdt</option>
-            </select>
-            <span class="like-amount">~ like</span>
+            <div class="input-container">
+              <label class="modal-input">
+                <input
+                  class="input-field"
+                  type="text"
+                  name="coins"
+                  placeholder="123"
+                />
+              </label>
+              <select class="input-field">
+                <option>like</option>
+                <option>bip</option>
+                <option>usdt</option>
+              </select>
+              <span class="like-amount">~ like</span>
+            </div>
             <div>
               <a href="">pay via bip-wallet</a>
               <p>or</p>
@@ -102,9 +104,15 @@
               <svg class="copy" width="18" height="18">
                 <use href="./images/sprite.svg#icon-modal-name"></use>
               </svg>
-              <svg class="qr" width="18" height="18">
-                <use href="./images/sprite.svg#icon-modal-name"></use>
-              </svg>
+              <div class="cover">
+                <img
+                  class="qr"
+                  src="./images/qr.png"
+                  alt="qr-code"
+                  width="240"
+                  height="240"
+                />
+              </div>
             </div>
           </div>
         </div>

@@ -14,6 +14,7 @@ body {
   font-size: 20px;
   line-height: 1.5;
   color: $primary-text-color;
+  margin: 0;
 
   @media screen and (min-width: 1200px) {
     background-color: #000000;
@@ -29,9 +30,10 @@ p {
   margin: 0;
 }
 
-// базовая отзывчивость для изображений
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+.wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  background-color: $bgc;
 }

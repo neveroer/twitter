@@ -17,6 +17,7 @@ body {
   font-size: 20px;
   line-height: 1.5;
   color: #cccccc;
+  margin: 0;
 }
 
 @media screen and (min-width: 1200px) {
@@ -34,10 +35,12 @@ p {
   margin: 0;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+.wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  background-color: #212121;
 }
 
 .button {
@@ -70,6 +73,29 @@ img {
   color: #1da1f2;
   background-color: #ffffff;
   border-color: #1da1f2;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-right: 45px;
+    padding-left: 45px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    padding-right: 95px;
+    padding-left: 95px;
+  }
 }
 
 .description {

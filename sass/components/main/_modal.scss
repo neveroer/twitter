@@ -14,7 +14,6 @@
 }
 
 .modal {
-  margin-top: 94px;
   margin-right: 15px;
   margin-left: 15px;
 
@@ -56,34 +55,63 @@
   }
 }
 
-.modal-name {
-  display: block;
-  margin-bottom: 30px;
-
-  font-weight: 700;
-  line-height: 1.15;
-  font-size: 20px;
-  color: $title-color;
-}
-
 .modal-close {
   position: absolute;
   bottom: 100%;
   left: 100%;
   transform: translate(-130%, 130%);
 
-  // @include flex(center, center);
-  background-color: #212121;
-  fill: #212121;
+  background-color: $bgc;
+  fill: $primary-text-color;
   width: 30px;
   height: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 2px solid $primary-text-color;
   border-radius: 50%;
 
-  transition: fill $timing $duration;
+  transition: fill $timing $duration, background-color $timing $duration,
+    border-color $timing $duration;
   &:hover,
   &:focus {
     background-color: $primary-text-color;
-    fill: $accent-color;
+    fill: $bgc;
+    border-color: $bgc;
   }
+}
+
+.input-field {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  border: 1px solid $primary-text-color;
+  border-radius: 5px;
+
+  &:not(:last-child) {
+    margin-left: 8px;
+  }
+}
+
+.like-amount {
+  margin-left: 8px;
+  font-size: 18px;
+  color: $secondary-text-color;
+}
+
+.input-container {
+  margin-bottom: 10px;
+}
+
+.cover {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    width: 240px;
+    height: 240px;
+    background-color: #ffffff;
+  }
+}
+
+.qr {
+  display: inline-block;
 }

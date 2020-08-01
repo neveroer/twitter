@@ -1,3 +1,7 @@
+.container {
+  @extend %container;
+}
+
 .description {
   color: $primary-text-color;
   font-size: 20px;
