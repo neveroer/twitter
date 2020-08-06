@@ -58,8 +58,23 @@
   margin-bottom: 10px;
 }
 
-.or {
-  margin-bottom: 10px;
+.or,
+.direct-send {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.or::before,
+.or::after {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  width: 220px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: $secondary-text-color;
 }
 
 .wallet {
